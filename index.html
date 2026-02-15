@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pour toi 💗</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Background 3D -->
+    <div id="canvas-container"></div>
+
+    <!-- Progress -->
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+
+      <!-- STEP 1 -->
+      <section class="step active" id="step1">
+        <h1 class="title">Est-tu curieuse ? 👀</h1>
+        <p class="subtitle">Clique pour commencer 😄</p>
+
+        <div class="btn-row">
+          <button class="btn primary" id="yesBtn">Oui</button>
+          <button class="btn ghost" id="noBtn">Non</button>
+        </div>
+
+        <div id="noArea" class="no-area"></div>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="step" id="step2">
+        <h2 class="title">Petit message 💌</h2>
+        <p class="text">
+          J’ai préparé un petit truc juste pour toi ❤️
+          Mais avant, je veux que tu saches que tu es une personne incroyable. Je l’ai su depuis le premier jour. Depuis nos premières conversations, j’ai pu voir quelque chose que je n’ai jamais vu chez personne d’autre.
+
+N’oublie pas que tu peux accomplir tout ce que tu voudras dans la vie. Je veux aussi que tu saches que tu ne seras jamais seule. Oui, tu as une armée comme famille, mais aussi parce que je serai à tes côtés à chaque instant.
+
+Et si un jour tu fais face à des difficultés, je serai avec toi. Je serai tes béquilles, je serai ton médicament, je serai ton oreille… en fait, je serai tout ce dont tu as besoin.
+
+Joyeuse Saint-Valentin, baby. Je t’aime. 💕
+        </p>
+        <button class="btn primary" id="next2">Suivant ➜</button>
+      </section>
+
+      <!-- STEP 3 -->
+      <section class="step" id="step3">
+        <h2 class="title">Nos souvenirs 📸</h2>
+
+        <div class="gallery">
+          <img src="assets/image/photo1.jpg.jpeg" alt="Souvenir 1">
+          <img src="assets/image/photo2.jpg.jpeg" alt="Souvenir 2">
+          <img src="assets/image/photo3.jpg.jpeg" alt="Souvenir 3">
+          <img src="assets/image/photo4.jpg.jpeg" alt="Souvenir 4">
+        </div>
+
+        <button class="btn primary" id="next3">Suivant ➜</button>
+      </section>
+
+      <!-- STEP 4 -->
+      <section class="step" id="step4">
+        <h2 class="title">What makes you special ✨</h2>
+
+        <div class="cards">
+          <div class="card">
+            <div class="emoji">✨</div>
+            <h3>Rayonnante</h3>
+            <p>Ton sourire est contagieux.</p>
+          </div>
+
+          <div class="card">
+            <div class="emoji">😊</div>
+            <h3>Attentionnée</h3>
+            <p>Tu penses aux autres naturellement.</p>
+          </div>
+
+          <div class="card">
+            <div class="emoji">🌟</div>
+            <h3>Chaleureuse</h3>
+            <p>Avec toi je me sens chez moi.</p>
+          </div>
+        </div>
+
+        <button class="btn primary" id="next4">Suivant ➜</button>
+      </section>
+
+      <!-- STEP 5 -->
+      <section class="step" id="step5">
+        <h2 class="title">Une chanson 🎵</h2>
+        <p class="text">Cette chanson me fait penser à toi 💗</p>
+
+        <div class="video-wrap">
+  <iframe
+    src="https://www.youtube.com/embed/WAcnWtZjDWE"
+    title="Ozuna - Dile Que Tu Me Quieres"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+        <button class="btn primary" id="hearts-btn">De l'amour ❤️</button>
+        <button class="btn ghost" id="restart">Recommencer ↺</button>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="js/background3d3d.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
